@@ -24,7 +24,7 @@ h1{
 .gallery .card {
   min-width: 280px;
   max-width: 30%;
-  transition: 0.1s linear;
+  transition: 0.3s linear;
 }
 
 .gallery .card:hover {

@@ -4,16 +4,16 @@
 
 <h1 class="title">Woat inventory</h1>
 <div class="gallery">
-    {% for sneaker in sneakers %}
+    {% for Sneaker in sneakers %}
     <a href="">
         <div class="card">
             <div class="card-image">
                 <figure class="image is-square">
-                    <img src="{{sneakers.image}}" alt="{{sneakers.name}}" />
+                    <img src="{{Sneaker.image}}" alt="{{Sneaker.name}}" />
                 </figure>
             </div>
             <div class="card-header">
-                <p class="card-header-title">{{sneakers.name}}</p>
+                <p class="card-header-title">{{Sneaker.name}}</p>
             </div>
         </div>
     </a>
