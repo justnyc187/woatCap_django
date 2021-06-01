@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="title">Woat inventory</h1>
+<div class="gallery">
+    {% for sneaker in sneakers %}
+    <a href="">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-square">
+                    <img src="{{sneakers.image}}" alt="{{sneakers.name}}" />
+                </figure>
+            </div>
+            <div class="card-header">
+                <p class="card-header-title">{{sneakers.name}}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock %}
