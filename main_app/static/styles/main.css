@@ -34,3 +34,32 @@ h1{
 p {
   font-size: 12px;
 }
+.title{
+  color: black;
+}
+
+.new-div{
+    text-align: center;
+    background-color:rgb(109, 130, 141);
+    padding: 75px;
+    border-radius: 5px;
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-left: 420px;
+    width: 500px;
+    padding: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+}
+
+.new-input{
+    border: none;
+    background-color: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    color: rgb(52, 66, 73);
+    font-weight: bold;
+    border-radius: 5px;
+}
