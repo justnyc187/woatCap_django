@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.views import View
 from django.views.generic.base import TemplateView
 from django.views.generic import DetailView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponse
 
 #import models
@@ -49,3 +49,8 @@ class InventoryUpdate(UpdateView):
     
     def get_success_url(self):
         return reverse('inventory_detail', kwargs={'pk': self.object.pk})
+
+class InventoryDelete(DeleteView):
+    model = Sneaker
+    template_name = "inventory_delete_confirmation.html"
+    success_url = "/inventory/"
