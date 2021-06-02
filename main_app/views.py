@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django.views.generic.base import TemplateView
+from django.views.generic import DetailView
 from django.views.generic.edit import CreateView
 from django.http import HttpResponse
 
@@ -34,3 +35,8 @@ class InventoryCreate(CreateView):
         fields = ['name', 'image', 'size']
         template_name = "inventory_create.html"
         success_url = "/inventory/"
+
+
+class InventoryDetail(DetailView):
+    model = Sneaker
+    template_name = "inventory_detail.html"

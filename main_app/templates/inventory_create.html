@@ -1,31 +1,32 @@
 {% extends 'base.html' %} {% block content %}
-<h1 class="title">Add Inventory</h1>
+
+<h1 class="title inv-title">Add Inventory</h1>
 
 
 
-    <div class="new-div">
+     <div class="new-div">
         <form method="post">
 
             {% csrf_token %}
         
-            Style: <input class="new-input" required type="text" name="style" placeholder="Style">
+            Name: <input class="new-input" required type="text" name="name" placeholder="Name">
             Size: <input class="new-input" required type="text" name="size" placeholder="Size">
-            Condition: <input class="new-input" required type="text" name="condition" placeholder="Condition">
             Image: <input class="new-input" type="text" placeholder="Upload Image" name="image" accept="image/png, image/jpeg">
         
-            <input class="new-btn" type="submit" value="Add Stock">
+            <input class="new-btn" type="submit" value="Submit">
         
         </form>
-    </div>
+    </div> 
+    <!-- <div class="new-div">
+        <form method="post">
+        
+        {% csrf_token %}
+        
+        {{form.as_p}}
 
-<!-- <form method="post">
-    
-    {% csrf_token %}
-    
-    {{form.as_p}}
-
-    <input type="submit" value="Submit" />
-</form> -->
+        <input type="submit" value="Submit" />
+        </form>
+    </div> -->
 
 
 

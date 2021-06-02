@@ -13,9 +13,12 @@
         <div class="control">
             <input class="button is-dark" type="submit" value="Search" />
         </div>
-        </div>
+        
     </div>
-    <a class="button is-dark" href="{% url 'inventory_list' %}">Clear Search</a>
+    <div class="buttons">
+        <a class="button is-dark" href="{% url 'inventory_list' %}">Clear Search</a>
+        <a class="button is-dark" href="{% url 'inventory_create' %}">Add Inventory</a>
+    </div>
 
 </form>
 <div class="gallery">
@@ -31,7 +34,7 @@
                 </figure>
             </div>
             <div class="card-header">
-                <p class="card-header-title">{{Sneaker.name}}</p>
+                <p class="card-header-title">{{Sneaker.name}} | Size: {{Sneaker.size}}</p>
             </div>
         </div>
     </a>
