@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from django.urls import reverse
 from django.views import View
 from django.views.generic.base import TemplateView
 from django.views.generic import DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from django.http import HttpResponse
 
 #import models
@@ -40,3 +41,11 @@ class InventoryCreate(CreateView):
 class InventoryDetail(DetailView):
     model = Sneaker
     template_name = "inventory_detail.html"
+
+class InventoryUpdate(UpdateView):
+    model = Sneaker
+    fields = ['name', 'image', 'size']
+    template_name = "inventory_update.html"
+    
+    def get_success_url(self):
+        return reverse('inventory_detail', kwargs={'pk': self.object.pk})

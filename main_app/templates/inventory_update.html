@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="title inv-title">Update {{ sneaker.name }}</h1>
+
+
+
+<div class="new-div">
+    <form method="post">
+
+        {% csrf_token %}
+
+        Name: <input class="new-input" type="text" name="name" placeholder="Name">
+        Size: <input class="new-input" type="text" name="size" placeholder="Size">
+        Image: <input class="new-input" type="text" placeholder="Upload Image" name="image"
+            accept="image/png, image/jpeg">
+
+        <input class="new-btn" type="submit" value="Submit">
+
+    </form>
+</div>
+
+{% endblock %}
