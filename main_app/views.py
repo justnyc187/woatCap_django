@@ -9,6 +9,8 @@ from django.http import HttpResponse
 # auth imports
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 #import models
 from .models import Sneaker
@@ -20,6 +22,7 @@ class Home(TemplateView):
     template_name = "home.html"
 
 
+@method_decorator(login_required, name='dispatch')
 class InventoryList(TemplateView):
     template_name = "inventory_list.html"
 
@@ -35,6 +38,7 @@ class InventoryList(TemplateView):
         return context
 
 
+@method_decorator(login_required, name='dispatch')
 class InventoryCreate(CreateView):
         model = Sneaker
         fields = ['name', 'image', 'size']
@@ -46,10 +50,13 @@ class InventoryCreate(CreateView):
             return super(InventoryCreate, self).form_valid(form)
 
 
+@method_decorator(login_required, name='dispatch')
 class InventoryDetail(DetailView):
     model = Sneaker
     template_name = "inventory_detail.html"
 
+
+@method_decorator(login_required, name='dispatch')
 class InventoryUpdate(UpdateView):
     model = Sneaker
     fields = ['name', 'image', 'size']
@@ -58,6 +65,8 @@ class InventoryUpdate(UpdateView):
     def get_success_url(self):
         return reverse('inventory_detail', kwargs={'pk': self.object.pk})
 
+
+@method_decorator(login_required, name='dispatch')
 class InventoryDelete(DeleteView):
     model = Sneaker
     template_name = "inventory_delete_confirmation.html"
@@ -80,3 +89,6 @@ class SignUp(View):
         else:
             context = {"form": form}
             return render(request, "registration/signup.html", context)
+
+
+    
