@@ -10,4 +10,5 @@ urlpatterns = [
          name="inventory_update"),
     path('inventory/<int:pk>/delete', views.InventoryDelete.as_view(),
          name="inventory_delete"),
+    path('accounts/signup/', views.SignUp.as_view(), name="signup")
 ]
