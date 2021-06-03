@@ -42,14 +42,12 @@ p {
 .new-div{
     text-align: center;
     background-color: rgb(101, 206, 179);
-    padding: 75px;
     border-radius: 5px;
     margin-top: 100px;
-    padding-top: 100px;
     margin-left: 420px;
     width: 500px;
     padding: 20px;
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
     font-size: 25px;
     border-radius: 10px;
     border-color: whitesmoke;
@@ -59,7 +57,7 @@ p {
 .new-input{
     border: none;
     background-color: whitesmoke;
-    font-family: 'Shadows Into Light', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
     font-size: 40px;
     color: rgb(101, 206, 140);
     font-weight: bold;
@@ -73,3 +71,6 @@ p {
   text-align: center;
 }
 
+.new-btn{
+  margin-top: 10px;
+}
