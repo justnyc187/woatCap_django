@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="title">Log In</h1>
+
+
+<!-- <div class="login-div">
+    <form class="login-p" action="/login" method="POST">
+        
+            {% csrf_token %}
+        <p>
+            <input class="login-input" type="email" name="email" placeholder="Email" required>
+        </p>
+        <p>
+            <input class="login-input" type="password" name="password" placeholder="Password" required minlength="8">
+        </p>
+        <input class="login-btn" type="submit" value="Login">
+    </form>
+</div> -->
+
+
+
+
+
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %} {{ form.as_p }}
+    <input type="submit" class="btn" value="login" />
+    <input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+
+{% endblock %}
