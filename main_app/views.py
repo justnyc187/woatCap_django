@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
 from django.views.generic.base import TemplateView
@@ -72,4 +72,11 @@ class SignUp(View):
         return render(request, "registration/signup.html", context)
 
     def post(self, request):
-        return
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect("inventory_list")
+        else:
+            context = {"form": form}
+            return render(request, "registration/signup.html", context)
