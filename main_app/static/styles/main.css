@@ -114,3 +114,18 @@ p {
     width: 100%;
     padding: 0;
 }
+
+/*splide*/
+.splide{
+    height: 600px;
+    margin: auto;
+}
+.show-img{
+    width:600px;
+    height: 500px;
+    object-fit: cover;
+}
+.most-recent{
+  text-align: center;
+  color: black;
+}
