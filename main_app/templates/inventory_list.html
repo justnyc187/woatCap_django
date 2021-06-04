@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h1 class="title">{{header}}</h1>
+<h1 class="title container">{{header}}</h1>
 
 
 <form method="get">
-    <div class="field has-addons">
+    <div class="field has-addons container">
         <div class="control">
             <input type="text" name="name" class="input" placeholder="Name" />
         </div>
@@ -15,7 +15,7 @@
         </div>
         
     </div>
-    <div class="buttons">
+    <div class="buttons container">
         <a class="button is-dark" href="{% url 'inventory_list' %}">Clear Search</a>
         <a class="button is-dark" href="{% url 'inventory_create' %}">Add Inventory</a>
     </div>
@@ -39,6 +39,8 @@
     </a>
     {% endfor %}
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./app.js"></script>
 
 
