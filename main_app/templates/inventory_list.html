@@ -21,24 +21,28 @@
     </div>
 
 </form>
-<div class="gallery">
+
+
+<div class="container gallery">
     {% for Sneaker in sneakers %}
-
-
-
     <a href="{% url "inventory_detail" Sneaker.pk %}">
         <div class="card">
-            <div class="card-image">
-                <figure class="image is-square">
-                    <img src="{{Sneaker.image}}" alt="{{Sneaker.name}}" />
-                </figure>
+            <div class="sneaker">
+                <img src="{{Sneaker.image}}" alt="{{Sneaker.name}}" />
             </div>
-            <div class="card-header">
-                <p class="card-header-title">{{Sneaker.name}} | Size: {{Sneaker.size}}</p>
+            <div class="info card-header">
+                <h4 class="card-header-title title-inventory purchase sizes">{{Sneaker.name}} | Size: {{Sneaker.size}}</h4>
             </div>
+                <!-- <p class="button is-dark">Edit</p>
+                <p class="button is-dark">Delete</p> -->
         </div>
     </a>
     {% endfor %}
 </div>
+<script src="./app.js"></script>
+
 
 {% endblock %}
+
+
+

@@ -10,14 +10,18 @@ h3 {
 h1{
     color: black;
 }
-.container {
+/* .container {
   padding: 40px;
   padding-right: 0;
-}
+} */
 
 .title {
   color: black;
 }
+
+/*
+inventory*/
+
 
 .gallery {
   display: flex;
@@ -73,4 +77,28 @@ p {
 
 .new-btn{
   margin-top: 10px;
+}
+.card {
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker img {
+  width: 15rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.info{
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
 }
