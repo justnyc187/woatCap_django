@@ -1,32 +1,34 @@
 {% extends 'base.html' %} {% block content %}
-<div class="detail__img gallery">
-    <img src="{{sneaker.image}}" alt="{{sneaker.name}}" />
-</div>
-
-    <h1 class="title">{{ sneaker.name }} | Size: {{ sneaker.size }}</h1>
-
-
-
-
-
-    
-<div class="detail__container">
-    <div class="buttons">
-        <a href="{% url "inventory_update" sneaker.pk %}" class="button is-info">
-            <span class="icon">
-                <i class="fas fa-edit"></i>
-            </span>
-        </a>
-        <a href="{% url "inventory_delete" sneaker.pk %}" class="button is-danger">
-            <span class="icon">
-                <i class="fas fa-trash-alt"></i>
-            </span>
-        </a>
+<div class="detail-container container">
+    <div class="detail__img gallery">
+        <img src="{{sneaker.image}}" alt="{{sneaker.name}}" />
     </div>
-    <!-- <div class="detail__about">
-        <h4 class="title is-4">About</h4>
-        <p>{{sneaker.size}}</p>
-    </div> -->
+
+        <h1 class="title">{{ sneaker.name }} | Size: {{ sneaker.size }}</h1>
+
+
+
+
+
+        
+    <div class="detail__container">
+        <div class="buttons">
+            <a href="{% url "inventory_update" sneaker.pk %}" class="button is-info">
+                <span class="icon">
+                    <i class="fas fa-edit"></i>
+                </span>
+            </a>
+            <a href="{% url "inventory_delete" sneaker.pk %}" class="button is-danger">
+                <span class="icon">
+                    <i class="fas fa-trash-alt"></i>
+                </span>
+            </a>
+        </div>
+        <!-- <div class="detail__about">
+            <h4 class="title is-4">About</h4>
+            <p>{{sneaker.size}}</p>
+        </div> -->
+    </div>
 </div>
 
 {% endblock %}
