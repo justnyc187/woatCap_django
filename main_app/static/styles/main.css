@@ -85,8 +85,8 @@ p {
   transform: translateZ(150px);
 }
 .card:hover .sneaker{
-  transform: translateZ(200px) rotateZ(-45deg);
-  transition: all .5s ease;
+  transform: translateZ(100px) rotateZ(-15deg);
+  transition: all .2s ease;
 }
 
 .sneaker {
@@ -119,6 +119,8 @@ p {
 .splide{
     height: 600px;
     margin: auto;
+    padding: 0;
+    margin-bottom: 0px;
 }
 .show-img{
     width:600px;
