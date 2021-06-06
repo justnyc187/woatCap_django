@@ -6,14 +6,13 @@
 
         <h1 class="title">{{ sneaker.name }} | Size: {{ sneaker.size }}</h1>
 
-
-
-
-
         
+
+                    <!-- NONMODAL -->
+
     <div class="detail__container">
         <div class="buttons">
-            <a href="{% url "inventory_update" sneaker.pk %}" class="button is-info">
+            <a href="{% url "inventory_update" sneaker.pk%}" class="button is-info">
                 <span class="icon">
                     <i class="fas fa-edit"></i>
                 </span>
@@ -24,11 +23,60 @@
                 </span>
             </a>
         </div>
+        </div>
+
+
+
+
+        <!-- MODAL  -->
+
+        
+    <!-- <div class="detail__container">
+        <div class="buttons">
+            <a class="button is-info" id="edit-btn">
+                <span class="icon">
+                    <i class="fas fa-edit"></i>
+                </span>
+            </a>
+            <a href="{% url "inventory_delete" sneaker.pk %}" class="button is-danger">
+                <span class="icon">
+                    <i class="fas fa-trash-alt"></i>
+                </span>
+            </a>
+        </div> -->
+    
         <!-- <div class="detail__about">
             <h4 class="title is-4">About</h4>
             <p>{{sneaker.size}}</p>
         </div> -->
+    <!-- </div>
+</div> -->
+
+
+<!-- modal -->
+
+<!-- <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5">
+
+        <div class="">
+            <form method="post">
+        
+                {% csrf_token %}
+        
+                Name: <input class="new-input" type="text" name="name" placeholder="Name">
+                Size: <input class="new-input" type="text" name="size" placeholder="Size">
+                Image: <input class="new-input" type="text" placeholder="Upload Image" name="image"
+                    accept="image/png, image/jpeg">
+        
+                <input class="new-btn button is-info" type="submit" value="Submit">
+        
+            </form>
+        </div>
     </div>
-</div>
+</div> -->
+
+<!-- <script src="/static/scripts/main.js"></script> -->
+
 
 {% endblock %}

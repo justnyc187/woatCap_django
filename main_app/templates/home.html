@@ -8,6 +8,7 @@
     </video>
 </div>
 
+{% if user.is_authenticated %}
 <h2 class="most-recent title">Most Recently Added</h2>
 
 <div class="splide" data-splide='{"type":"loop","perPage":3}'>
@@ -20,6 +21,7 @@
         </ul>
     </div>
 </div>
+{% endif %}
 <script>
     new Splide('.splide').mount();
 </script>

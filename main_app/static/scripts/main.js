@@ -3,6 +3,7 @@ $(".navbar-burger").click(function () {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
 });
+
 //Movement Animation to happen
 const $cards = $(".card");
 const container = document.querySelector(".container");
@@ -24,19 +25,27 @@ $cards.on("mousemove", (e) => {
     // $(e.target).parents(".card").children(".sneaker")[0].style.transform = "translateZ(200px) rotateZ(-45deg)";
 });
 
-// $cards.on("mouseenter", (e) => {
-//     $(e.target).parents(".card")[0].style.transform = "none";
-//     $(e.target).parents(".card")[0].style.transform = "translateZ(150px)";
-//     $(e.target).parents(".card").children(".card-header")[0].style.transform = "translateZ(200px) rotateZ(-45deg)";
-//     $(e.target).parents(".card").children(".card-header")[0].style.transform = "translateZ(100px)";
-//     $(e.target).parents(".card").children(".sneaker")[0].style.transform = "translateZ(75px)";
-// });
 
 $cards.on("mouseleave", (e) => {
     // $(e.target).parents(".card")[0].style.transition = "all 0.5s ease";
     $(e.target).parents(".card")[0].style.transform = `rotateY(0deg) rotateX(0deg)`;
     // $(e.target).parents(".card").children(".card-header")[0].style.transform = "translateZ(0px)";
     // $(e.target).parents(".card").children(".sneaker")[0].style.transform = "translateZ(0px) rotateZ(0deg)";
+});
+
+
+// MODAL
+const editButton = document.querySelector('#edit-btn');
+const modalBg = document.querySelector('.modal-background');
+const modal = document.querySelector('.modal');
+
+editButton.addEventListener('click', () => {
+    console.log("modal working?")
+    modal.classList.add('is-active');
+});
+
+modalBg.addEventListener('click', () => {
+    modal.classList.remove('is-active');
 });
 
 
