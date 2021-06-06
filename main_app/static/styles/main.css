@@ -130,6 +130,7 @@ p {
 .most-recent{
   text-align: center;
   color: black;
+  padding-top: 30px;
 }
 .detail-container{
   justify-content: center;
@@ -155,3 +156,12 @@ p {
   align-items: center;
   text-align: center;
 }
+.list-carousel{
+  padding-top: 30px;
+}
+.delete-conf{
+  padding-top: 30px;
+}
+/* .show-img{
+  border-radius: 30px;
+} */

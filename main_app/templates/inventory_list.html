@@ -1,36 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2 class="most-recent title">Highest Value</h2>
 
-<div class="splide" data-splide='{"type":"loop","perPage":3}'>
-    <div class="splide__track">
-        <ul class="splide__list">
-            <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5470890.jpg" alt=""></li>
-            <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710076.jpg" alt=""></li>
-            <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710077.jpg" alt=""></li>
-            <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710079.jpg" alt=""></li>
-        </ul>
+<h1 class="title container">{{header}}</h1>
+
+<form method="get">
+    <div class="field has-addons container">
+        <div class="control">
+            <input type="text" name="name" class="input" placeholder="Name" />
+        </div>
+        <div class="control">
+            <input class="button is-dark" type="submit" value="Search" />
+        </div>
     </div>
-</div>
-
-
-    <h1 class="title container">{{header}}</h1>
-        <form method="get">
-            <div class="field has-addons container">
-                <div class="control">
-                    <input type="text" name="name" class="input" placeholder="Name" />
-                </div>
-                <div class="control">
-                    <input class="button is-dark" type="submit" value="Search" />
-                </div>
-            </div>
-
-            <div class="buttons container">
-                <a class="button is-dark" href="{% url 'inventory_list' %}">Clear Search</a>
-                <a class="button is-dark" href="{% url 'inventory_create' %}">Add Inventory</a>
-            </div>
-        </form>
+    <div class="buttons container">
+        <a class="button is-dark" href="{% url 'inventory_list' %}">Clear Search</a>
+        <a class="button is-dark" href="{% url 'inventory_create' %}">Add Inventory</a>
+    </div>
+</form>
 
 
 <div class="container gallery">
@@ -49,6 +36,22 @@
     </a>
     {% endfor %}
 </div>
+<!-- <div class="list-carousel">
+    <h2 class="most-recent title">Most Recently Added</h2>
+
+        <div class="splide" data-splide='{"type":"loop","perPage":3}'>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5470890.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710076.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710077.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710079.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+</div> -->
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./app.js"></script>
@@ -56,6 +59,7 @@
 <script>
     new Splide('.splide').mount();
 </script>
+
 {% endblock %}
 
 
