@@ -1,4 +1,6 @@
 {% extends 'base.html' %} {% block content %}
+
+
 <div class="detail-container container">
     <div class="detail__img gallery">
         <img src="{{sneaker.image}}" alt="{{sneaker.name}}" />
@@ -6,11 +8,9 @@
 
         <h1 class="title">{{ sneaker.name }} | Size: {{ sneaker.size }}</h1>
 
-
-
-                    <!-- NONMODAL -->
-
-    <div class="detail__container">
+                        <!-- NONMODAL -->
+                    
+<div class="detail__container">
         <div class="buttons">
             <a href="/inventory/" class="button is-success">
                 <span class="icon">

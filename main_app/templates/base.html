@@ -41,12 +41,11 @@
             </div>
         {% endif %}
     </nav>
-
-    
-
-        {% block content %}{% endblock %}
-
-    </div>
+    {% block content %}{% endblock %}
+</div>
 </body>
+<script>
+    new Splide('.splide').mount();
+</script>
 
 </html>

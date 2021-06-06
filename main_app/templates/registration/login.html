@@ -1,32 +1,32 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1 class="title">Log In</h1>
+<h1 class="title inv-title">Log In</h1>
 
 
 
 
 
-<!-- <div class="new-div">
-    <form class="login-p" action="/" method="post">
+<div class="new-div">
+    <form class="login-p" method="post" action="{% url 'login' %}">
         {% csrf_token %}
-        <p>
-            <input class="login-input" type="username" name="username" placeholder="User Name" required>
-        </p>
-        <p>
-            <input class="login-input" type="password" name="password" placeholder="Password" required minlength="8">
-        </p>
-        <input class="login-btn" type="submit" value="Login">
+        
+        Username: <input class="new-input1" type="username" name="username" placeholder="User Name" required>
+        
+        
+        Password: <input class="new-input1" type="password" name="password" placeholder="Password" required minlength="8">
+                    <input type="submit" class="new-btn btn button is-info is-small" value="login" />
+                    <input type="hidden" name="next" value="{{ next }}" />
     </form>
-</div> -->
+</div>
 
 
- <div class="new-div">
+ <!-- <div class="new-div">
     <form method="post" action="{% url 'login' %}">
         {% csrf_token %} {{ form.as_p }}
-        <input type="submit" class="btn" value="login" />
+        <input type="submit" class="btn button is-info is-small" value="login" />
         <input type="hidden" name="next" value="{{ next }}" />
     </form>
-</dv>
+</div> -->
 
 
 {% endblock %}
