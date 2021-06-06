@@ -100,7 +100,7 @@ p {
 .sneaker img {
   width: 15rem;
   z-index: 2;
-  transition: all 0.75s ease-out;
+  transition: all 0.35s ease-out;
 }
 .info{
   font-size: 1.3rem;
@@ -162,6 +162,3 @@ p {
 .delete-conf{
   padding-top: 30px;
 }
-/* .show-img{
-  border-radius: 30px;
-} */
