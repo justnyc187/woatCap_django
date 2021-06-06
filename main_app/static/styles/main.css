@@ -149,3 +149,9 @@ p {
   position: center;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
+.inventory-form{
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
