@@ -8,34 +8,6 @@
 
         <h1 class="title">{{ sneaker.name }} | Size: {{ sneaker.size }}</h1>
 
-                        <!-- NONMODAL -->
-                    
-<!-- <div class="detail__container">
-        <div class="buttons">
-            <a href="/inventory/" class="button is-success">
-                <span class="icon">
-                    <i class="fas fa-list-ul"></i>
-                </span>
-            </a>
-            <a href="{% url "inventory_update" sneaker.pk%}" class="button is-info">
-                <span class="icon">
-                    <i class="fas fa-edit"></i>
-                </span>
-            </a>
-            <a href="{% url "inventory_delete" sneaker.pk %}" class="button is-danger">
-                <span class="icon">
-                    <i class="fas fa-trash-alt"></i>
-                </span>
-            </a>
-        </div>
-</div> -->
-
-
-
-
-        <!-- MODAL  -->
-
-        
     <div class="detail__container">
         <div class="buttons">
             <a href="/inventory/" class="button is-success">
@@ -65,9 +37,9 @@
 
 <!-- modal -->
 
-<div class="modal">
+<div class="modal modal-div">
     <div class="modal-background"></div>
-    <div class="modal-content has-background-white py-5 px-5 new-div">
+    <div class="modal-content py-5 px-5 new-div">
 
         <div class="">
             <form action="{% url "inventory_update" sneaker.pk %}" method="post">
@@ -87,6 +59,29 @@
 </div>
 
 <!-- <script src="/static/scripts/main.js"></script> -->
+
+
+                        <!-- NONMODAL -->
+                        
+                        <!-- <div class="detail__container">
+                                <div class="buttons">
+                                    <a href="/inventory/" class="button is-success">
+                                        <span class="icon">
+                                            <i class="fas fa-list-ul"></i>
+                                        </span>
+                                    </a>
+                                    <a href="{% url "inventory_update" sneaker.pk%}" class="button is-info">
+                                        <span class="icon">
+                                            <i class="fas fa-edit"></i>
+                                        </span>
+                                    </a>
+                                    <a href="{% url "inventory_delete" sneaker.pk %}" class="button is-danger">
+                                        <span class="icon">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                        </div> -->
 
 
 {% endblock %}
