@@ -117,6 +117,7 @@ p {
   width: 15rem;
   z-index: 2;
   transition: all 0.35s ease-out;
+  opacity: 0.85;
 }
 .info{
   font-size: 1.3rem;
@@ -166,7 +167,7 @@ p {
   position: center;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
-.search-form{
+.search-form, .box{
   justify-content: center;
   text-align: center;
   border-radius: 5px;

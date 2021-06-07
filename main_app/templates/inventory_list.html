@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container box">
     <h1 class="title">{{header}}</h1>
 
     <form method="get">
@@ -26,7 +26,7 @@
     <a href="{% url "inventory_detail" Sneaker.pk %}">
         <div class="card">
             <div class="sneaker">
-                <img src="{{Sneaker.image}}" alt="{{Sneaker.name}}" />
+                <img class="inventory-img" src="{{Sneaker.image}}" alt="{{Sneaker.name}}" />
             </div>
              <div class="info">
                 <h4 class="card-header-title title-inventory purchase sizes">{{Sneaker.name}} | Size: {{Sneaker.size}}</h4>

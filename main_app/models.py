@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class Sneaker(models.Model):
 
     name = models.CharField(max_length=100)
-    image = models.CharField(max_length=550)
+    image = models.CharField(max_length=1000)
     size = models.CharField(max_length=15)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
