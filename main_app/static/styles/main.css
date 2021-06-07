@@ -129,24 +129,24 @@ p {
   font-weight: lighter;
   transition: all 0.75s ease-out;
 }
-
 .video1{
     text-align: center;
     width: 100%;
     padding: 0;
 }
-
-/*splide*/
-.splide{
-    height: 600px;
-    margin: auto;
-    padding: 0;
-    margin-bottom: 0px;
+.splide1{
+  margin-bottom: 100px;
+  /* background: black; */
 }
 .show-img{
     width:600px;
     height: 500px;
     object-fit: cover;
+}
+.show-img-home{
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
 }
 .most-recent{
   text-align: center;
@@ -177,6 +177,18 @@ p {
   border-radius: 5px;
   margin-top: 50px;
   margin-left: 420px;
+  width: 500px;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.box1{
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 50px;
   width: 500px;
   padding: 20px;
   font-size: 25px;

@@ -19,37 +19,37 @@
 </head>
 
 <body>
-    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">Woat</a>
-            <button onclick="myFunction()">Toggle dark mode</button>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        {% if user.is_authenticated %}
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">Woat</a>
+                <button onclick="myFunction()">Toggle dark mode</button>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            {% if user.is_authenticated %}
             <div class="navbar-menu navbar-end">
                 <span class="navbar-item">Welcome: {{user.username}}</span>
                 <a class="navbar-item" href="/inventory">Inventory</a>
                 <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
             </div>
-        {% else %}
+            {% else %}
             <div class="navbar-menu navbar-end">
                 <a class="navbar-item" href="{% url 'login' %}">Log In</a>
                 <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
             </div>
-        {% endif %}
-    </nav>
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
-    {% block content %}{% endblock %}
-</div>
+            {% endif %}
+        </nav>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+            {% block content %}{% endblock %}
+        </div>
 </body>
 <script>
     new Splide('.splide').mount();

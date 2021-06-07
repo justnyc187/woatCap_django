@@ -23,10 +23,11 @@ class Home(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["sneakers"] = Sneaker.objects.filter(
-                user=self.request.user)[:3]
-        # context["value"] = Sneaker.objects.filter(
-        #     user=self.request.user).order_by("value")[:3]
+        if self.request.user.is_authenticated:
+            context["sneakers"] = Sneaker.objects.filter(
+                    user=self.request.user)[:10]
+            # context["value"] = Sneaker.objects.filter(
+            #     user=self.request.user).order_by("value")[:3]
         return context
 
 
