@@ -8,7 +8,7 @@
 <div class="new-div">
     <form method="post">
 
-        {% csrf_token %}
+        {% csrf_token %} {{ form.errors }}
 
         Name: <input class="new-input" type="text" name="name" placeholder="Name">
         Size: <input class="new-input" type="text" name="size" placeholder="Size">

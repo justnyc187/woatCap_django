@@ -10,7 +10,7 @@
 
                         <!-- NONMODAL -->
                     
-<div class="detail__container">
+<!-- <div class="detail__container">
         <div class="buttons">
             <a href="/inventory/" class="button is-success">
                 <span class="icon">
@@ -28,7 +28,7 @@
                 </span>
             </a>
         </div>
-</div>
+</div> -->
 
 
 
@@ -36,7 +36,7 @@
         <!-- MODAL  -->
 
         
-    <!-- <div class="detail__container">
+    <div class="detail__container">
         <div class="buttons">
             <a href="/inventory/" class="button is-success">
                 <span class="icon">
@@ -53,24 +53,24 @@
                     <i class="fas fa-trash-alt"></i>
                 </span>
             </a>
-        </div> -->
+        </div>
     
         <!-- <div class="detail__about">
             <h4 class="title is-4">About</h4>
             <p>{{sneaker.size}}</p>
         </div> -->
-    <!-- </div>
-</div> -->
+    </div>
+</div>
 
 
 <!-- modal -->
 
-<!-- <div class="modal">
+<div class="modal">
     <div class="modal-background"></div>
     <div class="modal-content has-background-white py-5 px-5 new-div">
 
         <div class="">
-            <form method="post">
+            <form action="{% url "inventory_update" sneaker.pk %}" method="post">
         
                 {% csrf_token %}
         
@@ -84,7 +84,7 @@
             </form>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- <script src="/static/scripts/main.js"></script> -->
 
