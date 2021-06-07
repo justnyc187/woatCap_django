@@ -1,8 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1 class="title inv-title">Sign Up</h1>
-
-
     <!-- <div class="register-div new-div">
         <form class="register-p" method="post" action="{% url 'signup' %}">
     {{ form.errors }} {% csrf_token %}
@@ -22,6 +19,7 @@
 
 
 <div class="new-div">
+    <h3 class="title inv-title">Sign Up</h3>
     <form method="post" action="{% url 'signup' %}">
             {{ form.errors }}
         {% csrf_token %} {{ form.as_p }}

@@ -1,12 +1,8 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1 class="title inv-title">Log In</h1>
-
-
-
-
 
 <div class="new-div">
+    <h3 class="title inv-title">Log In</h3>
     <form class="login-p" method="post" action="{% url 'login' %}">
         {% csrf_token %}
         
