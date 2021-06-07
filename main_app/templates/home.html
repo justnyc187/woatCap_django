@@ -13,22 +13,35 @@
 <h2 class="most-recent title">Most Recently Added</h2>
 
 
-<!-- <div class="splide" data-splide='{"type":"loop","perPage":3}'>
-    {% for Sneaker in sneakers %}
+<div class="splide" data-splide='{"type":"loop","perPage":3}'>
+    
     <div class="splide__track">
         <ul class="splide__list">
-            <li class="splide__slide"><img class="show-img" src="{{Sneaker.image}}" alt="{{Sneaker.name}}"></li>
+            {% for sneaker in sneakers %}
+            <li class="splide__slide"><img class="show-img" src="{{sneaker.image}}" alt="{{sneaker.name}}"></li>
+            {% endfor %}
         </ul>
     </div>
-    {% endfor %}
+    
+</div>
+
+<!-- <div class="splide" data-splide='{"type":"loop","perPage":3}'>
+
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for sneaker in value %}
+            <li class="splide__slide"><img class="show-img" src="{{sneaker.image}}" alt="{{sneaker.name}}"></li>
+            {% endfor %}
+        </ul>
 </div> -->
 
+</div>
 
 
 
 
 
-<div class="splide" data-splide='{"type":"loop","perPage":3}'>
+<!-- <div class="splide" data-splide='{"type":"loop","perPage":3}'>
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5470890.jpg" alt=""></li>
@@ -37,8 +50,10 @@
             <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710079.jpg" alt=""></li>
         </ul>
     </div>
-</div>
+</div> -->
 
 {% endif %}
+
+
 
 {% endblock %}

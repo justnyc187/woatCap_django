@@ -3,6 +3,10 @@ body {
   color: #ffffff;
   min-height: 100vh;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 h2,
 h3 {
   color: #ffffff;
@@ -193,5 +197,5 @@ p {
   padding-top: 30px;
 }
 .modal-div{
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }

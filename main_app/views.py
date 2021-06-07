@@ -21,6 +21,14 @@ from .models import Sneaker
 class Home(TemplateView):
     template_name = "home.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["sneakers"] = Sneaker.objects.filter(
+                user=self.request.user)[:3]
+        # context["value"] = Sneaker.objects.filter(
+        #     user=self.request.user).order_by("value")[:3]
+        return context
+
 
 @method_decorator(login_required, name='dispatch')
 class InventoryList(TemplateView):
