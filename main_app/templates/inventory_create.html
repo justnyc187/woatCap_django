@@ -2,15 +2,15 @@
 
 
 
-     <div class="new-div">
-        <h1 class="title inv-title">Add Inventory</h1>
-        <form method="post">
+     <div class="new-div-login1 container box1">
+        <h2 class="title inv-title">Add Inventory</h2>
+        <form class="login-p" method="post">
 
             {% csrf_token %} {{forms.errors}}
         
-            Name: <input class="new-input" required type="text" name="name" placeholder="Name">
-            Size: <input class="new-input" required type="text" name="size" placeholder="Size">
-            Image: <input class="new-input" type="text" placeholder="Upload Image" name="image" accept="image/png, image/jpeg">
+            <h3 id="sign-login">Name: <input class="new-input1" required type="text" name="name" placeholder="Name"></h3>
+            <h3 id="sign-login">Size: <input class="new-input1" required type="text" name="size" placeholder="Size"></h3>
+            <h3 id="sign-login">Image: <input class="new-input1" type="text" placeholder="Upload Image" name="image" accept="image/png, image/jpeg"></h3>
 
             <a href="/inventory/" class="button is-success new-btn">
                 <span class="icon">

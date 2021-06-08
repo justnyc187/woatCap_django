@@ -39,23 +39,17 @@
 
 <div class="modal modal-div">
     <div class="modal-background"></div>
-    <div class="modal-content py-5 px-5 new-div">
-
-        <div class="">
+        <div class="modal-content modal-div2 box1">
             <form action="{% url "inventory_update" sneaker.pk %}" method="post">
-        
                 {% csrf_token %}
         
                 Name: <input class="new-input" type="text" name="name" placeholder="Name">
                 Size: <input class="new-input" type="text" name="size" placeholder="Size">
                 Image: <input class="new-input" type="text" placeholder="Upload Image" name="image"
                     accept="image/png, image/jpeg">
-        
-                <input class="new-btn button is-info" type="submit" value="Submit">
-        
+                    <input class="new-btn button is-info" type="submit" value="Submit">
             </form>
         </div>
-    </div>
 </div>
 
 <!-- <script src="/static/scripts/main.js"></script> -->
