@@ -42,15 +42,15 @@
             </div>
             {% endif %}
         </nav>
-            <script>
-                function myFunction() {
-                    var element = document.body;
-                    element.classList.toggle("dark-mode");
-                }
-            </script>
             {% block content %}{% endblock %}
         
 </body>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 <script>
     new Splide('.splide').mount();
 </script>

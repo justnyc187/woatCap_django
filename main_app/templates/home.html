@@ -9,8 +9,7 @@
 </div>
 
 {% if user.is_authenticated %}
-<div class="">
-    <h2 class="most-recent title">Most Recently Added...</h2>
+<h2 class="most-recent title">Most Recently Added...</h2>
     <div class="splide splide1" data-splide='{"type":"loop","perPage":5}'>
         <div class="splide__track">
             <ul class="splide__list">
@@ -20,7 +19,72 @@
             </ul>
         </div>
     </div>
+
+<div class="video1">
+    <img class="home-img" src="https://cms-cdn.goat.com/750/d3d6e7bef1b5-9ada-be11-aa5c-0a023e44.jpg" alt="">
 </div>
+<!-- <div class="video2">
+    <video class="video1 width=" 1800" height="800" autoplay loop controls>
+        <source src="/static/images/pexels-pavel-danilyuk-7667955.mp4" type="video/mp4" />
+    </video>
+</div> -->
+
+<h2 class="most-recent title">Just Dropped...</h2>
+<div class="container home-box">
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-64x64">
+                <img src="/static/images/pexels-photo-5710076.jpg" alt="Image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <div class="content">
+                <p>
+                    <strong>Jordan 1 "Tie Dye"</strong> <small>31m</small>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                    egestas. Nullam condimentum luctus turpis.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-64x64">
+                <img src="/static/images/pexels-photo-5470890.jpg" alt="Image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <div class="content">
+                <p>
+                    <strong>Jordan 1 "Multi"</strong> <small>31m</small>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                    egestas. Nullam condimentum luctus turpis.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-64x64">
+                <img src="/static/images/pexels-photo-5710077.jpg" alt="Image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <div class="content">
+                <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                    egestas. Nullam condimentum luctus turpis.
+                </p>
+            </div>
+        </div>
+    </article>
+</div>
+
+
 
 <!-- <div class="splide" data-splide='{"type":"loop","perPage":3}'>
 
@@ -31,7 +95,9 @@
             {% endfor %}
         </ul>
 </div> -->
-
-
 {% endif %}
 {% endblock %}
+
+
+
+

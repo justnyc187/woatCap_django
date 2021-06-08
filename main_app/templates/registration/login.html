@@ -4,7 +4,7 @@
 <div class="new-div">
     <h3 class="title inv-title">Log In</h3>
     <form class="login-p" method="post" action="{% url 'login' %}">
-        {% csrf_token %}
+        {% csrf_token %} {form.errors}
         
         Username: <input class="new-input1" type="username" name="username" placeholder="User Name" required>
         
