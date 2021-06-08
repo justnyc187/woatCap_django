@@ -7,6 +7,21 @@ body {
   background-color: black;
   color: white;
 }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding-bottom: 175px; */
+  /* padding-top: 150px; */
+}
+#home-img-text{
+  font-size: 60px;
+  opacity: 0.3;
+}
+.just-in{
+  font-size: 250px;
+}
 h2,
 h3 {
   color: #ffffff;
@@ -35,7 +50,7 @@ inventory
 }
 
 p {
-  font-size: 20px;
+  font-size: 15px;
   color: black;
 }
 #sign-login{
@@ -45,6 +60,7 @@ p {
 }
 .new-div-login1{
   padding-top: 300px;
+  background-color: rgb(101, 206, 179);
 }
 
 .new-div-login{
@@ -139,6 +155,7 @@ p {
 .video1{
     text-align: center;
     width: 100%;
+    background-color: black;
 }
 .splide1{
   margin-bottom: 40px;
