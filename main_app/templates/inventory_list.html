@@ -17,6 +17,8 @@
         <div class="buttons">
             <a class="button is-dark" href="{% url 'inventory_list' %}">Clear Search</a>
             <a class="button is-dark" href="{% url 'inventory_create' %}">Add Inventory</a>
+            <a class="button is-dark is-small new-btn" href="https://stockx.com/" target="_blank">StockX</a>
+            <a class="button is-dark is-small new-btn" href="https://www.goat.com/" target="_blank">Goat</a>
         </div>
     </form>
 </div>
@@ -37,7 +39,7 @@
     {% endfor %}
 </div>
 <div class="list-carousel">
-    <h2 class="most-recent title">Most Valuable</h2>
+    <h2 class="most-recent title">Most Valuable...</h2>
 
         <div class="splide" data-splide='{"type":"loop","perPage":3}'>
             <div class="splide__track">
