@@ -4,13 +4,12 @@
 
 <div class="video1">
     <video width="1800" height="800" autoplay loop controls>
-        <source src="/static/images/pexels-rodnae-productions-5700368.mp4" type="video/mp4"/>
+        <source src="/static/images/pexels-rodnae-productions-5700368.mp4" type="video/mp4" />
     </video>
 </div>
 
 {% if user.is_authenticated %}
-<div class="home-splide">
-    <h2 class="most-recent title">Most Recently Added</h2>
+    <h2 class="most-recent title">Most Recently Added...</h2>
     <div class="splide splide1" data-splide='{"type":"loop","perPage":5}'>
         <div class="splide__track">
             <ul class="splide__list">
@@ -20,7 +19,6 @@
             </ul>
         </div>
     </div>
-</div>
 
 
 <!-- <div class="splide" data-splide='{"type":"loop","perPage":3}'>

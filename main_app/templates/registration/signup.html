@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 
-    <div class="register-div new-div">
+    <div class="new-div">
         <form class="register-p" method="post" action="{% url 'signup' %}">
             <h3 class="title inv-title">Sign Up</h3>
     {{ form.errors }} {% csrf_token %}

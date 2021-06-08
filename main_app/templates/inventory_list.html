@@ -4,7 +4,6 @@
 
 <div class="container box1">
     <h1 class="title">{{header}}</h1>
-
     <form method="get">
         <div class="field has-addons">
             <div class="control">
@@ -24,12 +23,12 @@
 </div>
 
 
-<div class="container gallery">
+<div class="container gallery inventory-form">
     {% for Sneaker in sneakers %}
     <a href="{% url "inventory_detail" Sneaker.pk %}">
         <div class="card">
             <div class="sneaker">
-                <img class="inventory-img" src="{{Sneaker.image}}" alt="{{Sneaker.name}}" />
+                <img class="inventory-img" src="{{Sneaker.image}}" alt="{{Sneaker.name}}"/>
             </div>
              <div class="info">
                 <h4 class="card-header-title title-inventory purchase sizes">{{Sneaker.name}} | Size: {{Sneaker.size}}</h4>
@@ -41,16 +40,16 @@
 <div class="list-carousel">
     <h2 class="most-recent title">Most Valuable...</h2>
 
-        <div class="splide" data-splide='{"type":"loop","perPage":3}'>
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5470890.jpg" alt=""></li>
-                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710076.jpg" alt=""></li>
-                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710077.jpg" alt=""></li>
-                    <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710079.jpg" alt=""></li>
-                </ul>
-            </div>
+    <div class="splide" data-splide='{"type":"loop","perPage":3}'>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5470890.jpg" alt=""></li>
+                <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710077.jpg" alt=""></li>
+                <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710079.jpg" alt=""></li>
+                <li class="splide__slide"><img class="show-img" src="/static/images/pexels-photo-5710076.jpg" alt=""></li>
+            </ul>
         </div>
+    </div>
 </div>
 
 

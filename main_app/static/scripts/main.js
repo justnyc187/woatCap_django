@@ -21,16 +21,9 @@ $cards.on("mousemove", (e) => {
     let xAxis = (position.left + 280 - e.pageX) / 10;
     let yAxis = (position.top + 465 - e.pageY) / 10;
     $(e.target).parents(".card")[0].style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    // $(e.target).parents(".card").children(".card-header")[0].style.transform = "translateZ(150px)";
-    // $(e.target).parents(".card").children(".sneaker")[0].style.transform = "translateZ(200px) rotateZ(-45deg)";
 });
-
-
 $cards.on("mouseleave", (e) => {
-    // $(e.target).parents(".card")[0].style.transition = "all 0.5s ease";
     $(e.target).parents(".card")[0].style.transform = `rotateY(0deg) rotateX(0deg)`;
-    // $(e.target).parents(".card").children(".card-header")[0].style.transform = "translateZ(0px)";
-    // $(e.target).parents(".card").children(".sneaker")[0].style.transform = "translateZ(0px) rotateZ(0deg)";
 });
 
 
