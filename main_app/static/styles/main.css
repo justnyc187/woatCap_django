@@ -144,9 +144,8 @@ p {
     object-fit: cover;
 }
 .show-img-home{
-  width: 240px;
+  width: 250px;
   height: 240px;
-  /* object-fit: fill; */
 }
 .most-recent{
   text-align: center;
