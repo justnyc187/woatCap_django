@@ -35,8 +35,16 @@ inventory
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
   color: black;
+}
+#sign-login{
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+}
+.new-div-login1{
+  padding-top: 300px;
 }
 
 .new-div-login{
@@ -133,7 +141,7 @@ p {
     width: 100%;
 }
 .splide1{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .show-img-home{
   width: 280px;
@@ -192,13 +200,13 @@ p {
   margin-top: 50px;
   width: 500px;
   padding: 20px;
-  font-size: 25px;
+  font-size: 2opx;
   border-radius: 10px;
   border-color: whitesmoke;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 .home-box{
-  text-align: center;
+  /* text-align: center; */
   border-radius: 5px;
   margin-top: 50px;
   width: 800px;
