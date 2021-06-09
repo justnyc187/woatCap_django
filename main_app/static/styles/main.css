@@ -47,6 +47,10 @@ inventory
 .gallery .card {
   min-width: 280px;
   transition: 0.1s linear;
+  max-width: 30%;
+}
+.gallery .card:hover {
+  transform: scale(1.05);
 }
 
 p {
@@ -145,7 +149,7 @@ p {
 }
 .info{
   font-size: 1.3rem;
-  padding: 2rem 0rem;
+  /* padding: 2rem 0rem; */
   font-weight: lighter;
   transition: all 0.75s ease-out;
 }
@@ -242,3 +246,5 @@ p {
 .modal-div{
   padding-bottom: 200px;
 }
+
+ 
