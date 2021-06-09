@@ -1,0 +1,1 @@
+web: gunicorn {woatCap_project}.wsgi
