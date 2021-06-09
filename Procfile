@@ -1,1 +1,1 @@
-web: gunicorn {woatCap_project}.wsgi
+web: gunicorn woatCap_project.wsgi
