@@ -43,7 +43,7 @@ class InventoryList(TemplateView):
             context["header"] = f"Searching for {name_query}"
         else:
             context["sneakers"] = Sneaker.objects.filter(user=self.request.user)
-            context["header"] = "Woat Inventory"
+            context["header"] = "Inventory"
         return context
 
 

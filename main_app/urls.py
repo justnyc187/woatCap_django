@@ -11,4 +11,6 @@ urlpatterns = [
     path('inventory/<int:pk>/update', InventoryUpdate.as_view(), name="inventory_update"),
     path('inventory/<int:pk>/delete', InventoryDelete.as_view(), name="inventory_delete"),
     path('accounts/signup/', SignUp.as_view(), name="signup")
+    # what .as_view?
+    # path('accounts/profile/', SignUp.as_view(), name="profile")
 ]

@@ -17,13 +17,13 @@
         <script src="{% static 'scripts/main.js' %}" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <title>Woat</title>
+    <title>JustShoes</title>
 </head>
 
 <body>
         <nav class="navbar is-primary" role="navigation" aria-label="dropdown navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">Woat</a>
+                <a class="navbar-item" href="/">JustShoes</a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -33,6 +33,7 @@
             {% if user.is_authenticated %}
             <div class="navbar-menu navbar-end">
                 <a class="button is-dark is-small new-btn" onclick="myFunction()">Dark</a>
+                <a class="navbar-item" href="/profile">Profile</a>
                 <span class="navbar-item">Welcome: {{user.username}}</span>
                 <a class="navbar-item" href="/inventory">Inventory</a>
                 <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
