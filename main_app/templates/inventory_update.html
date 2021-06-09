@@ -5,13 +5,14 @@
 
 
 
-<div class="new-div">
+<div class="new-div-login1 container box1">
     <form method="post">
 
         {% csrf_token %} {{ form.errors }}
 
         Name: <input class="new-input" type="text" name="name" placeholder="Name">
         Size: <input class="new-input" type="text" name="size" placeholder="Size">
+        Value on Goat: <input class="new-input" type="text" name="value" placeholder="Value">
         Image: <input class="new-input" type="text" placeholder="Upload Image" name="image"
             accept="image/png, image/jpeg">
 
