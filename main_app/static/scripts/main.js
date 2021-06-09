@@ -17,7 +17,7 @@ const sizes = document.querySelector(".sizes");
 //Moving Animation Event
 $cards.on("mousemove", (e) => {
     const position = $(e.target).parents(".card").eq(0).offset()
-    console.log(position)
+    // console.log(position)
     let xAxis = (position.left + 280 - e.pageX) / 10;
     let yAxis = (position.top + 465 - e.pageY) / 10;
     $(e.target).parents(".card")[0].style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
