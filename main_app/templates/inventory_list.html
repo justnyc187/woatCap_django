@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container box1">
-    <h1 class="title">{{user.username}} Inventory</h1>
+    <h1 class="dark-theme || light-theme inv-header">{{user.username}} Inventory</h1>
     <form method="get">
         <div class="field has-addons">
             <div class="control">
@@ -23,11 +23,11 @@
 </div>
 
 
-<div class="container gallery inventory-form">
+<div id="darkmode" class="container gallery inventory-form">
     {% for Sneaker in sneakers %}
     <a href="{% url "inventory_detail" Sneaker.pk %}">
         <div class="card">
-            <div class="sneaker">
+            <div id="darkmode" class="sneaker">
                 <img class="inventory-img" src="{{Sneaker.image}}" alt="{{Sneaker.name}}"/>
             </div>
              <div class="info">

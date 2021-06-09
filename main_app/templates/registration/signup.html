@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
+
+
     <div class="new-div-login1 container box1">
         <form class="register-p" method="post" action="{% url 'signup' %}">
             <h3 class="title inv-title">Sign Up</h3>
@@ -12,18 +14,6 @@
         </form>
     </div>
 
-
-
-
-<!-- <div class="new-div">
-    <h3 class="title inv-title">Sign Up</h3>
-    <form method="post" action="{% url 'signup' %}">
-            {{ form.errors }} {{ form.as_p }}
-        {% csrf_token %}
-        <input type="submit" class="btn new-btn button is-info is-small" value="Sign up" />
-        <input type="hidden" name="next" value="{{ next }}" />
-    </form>
-</div> -->
 
 
 {% endblock %}

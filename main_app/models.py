@@ -11,7 +11,7 @@ class Sneaker(models.Model):
     name = models.CharField(max_length=100)
     image = models.CharField(max_length=10000)
     size = models.CharField(max_length=15)
-    # value = models.CharField(max_length=100)
+    value = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     # Do i need related name to connect sneakers to Profile as well as user?
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -23,7 +23,8 @@ class Sneaker(models.Model):
         ordering = ['-created_at', 'name']
 
 
-        
+
+# PROFILE MODEL FOR FUTURE
 
         # class Profile(models.Model):
 #     name = models.CharField(max_length=500)

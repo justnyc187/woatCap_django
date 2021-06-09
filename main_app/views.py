@@ -26,6 +26,7 @@ class Home(TemplateView):
         if self.request.user.is_authenticated:
             context["sneakers"] = Sneaker.objects.filter(
                     user=self.request.user)[:10]
+                    # FOR VALUE
             # context["value"] = Sneaker.objects.filter(
             #     user=self.request.user).order_by("value")[:3]
         return context
@@ -50,7 +51,7 @@ class InventoryList(TemplateView):
 @method_decorator(login_required, name='dispatch')
 class InventoryCreate(CreateView):
         model = Sneaker
-        fields = ['name', 'image', 'size']
+        fields = ['name', 'image', 'size', 'value']
         template_name = "inventory_create.html"
         success_url = "/inventory/"
 
@@ -68,7 +69,7 @@ class InventoryDetail(DetailView):
 @method_decorator(login_required, name='dispatch')
 class InventoryUpdate(UpdateView):
     model = Sneaker
-    fields = ['name', 'image', 'size']
+    fields = ['name', 'image', 'size', 'value']
     template_name = "inventory_update.html"
     
     def get_success_url(self):
