@@ -176,20 +176,20 @@ p {
   width: 100%;
   background-color: black;
 }
-.splide1{
+/* .splide1{
   margin-bottom: 40px;
-}
+} */
 .show-img-home{
   width: 280px;
   height: 270px;
   max-width: 180%;
   min-width: 270px;
 }
-/* .show-img{
+.show-img{
   width: 600px;
   height: 500px;
   object-fit: cover;
-} */
+}
 .home-img{
   width: 100%;
 }
