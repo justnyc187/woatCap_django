@@ -51,18 +51,20 @@
             </div>
             {% endif %}
         </nav>
-            {% block content %}{% endblock %}
-        
+        {% block content %}{% endblock %}
 </body>
 <script>
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
 </script>
 <script>
-    new Splide('.splide').mount();
+new Splide('.splide').mount();
 </script>
-
-
 </html>
+
+
+        
+
+

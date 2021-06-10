@@ -16,13 +16,17 @@ body {
   font-size: 75px;
   opacity: 0.3;
 }
+.list-carousel{
+  font: 50px;
+  padding-bottom: 20px;
+}
 .just-in{
   font-size: 450px;
 }
 #modal{
-  color: whitesmoke;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
+  font-weight: bold;
 }
 #inv-title2{
   font-size: 80px;
@@ -30,13 +34,21 @@ body {
 #home-recent{
   font-size: 50px;
 }
+#detail-txt{
+  font-size: 40px;
+}
 .inv-title{
   text-align: center;
   font-weight: bold;
 }
+#sign-login2{
+color: rgb(158, 242, 205);
+font-size: 55px;
+text-align: center;
+}
 h2,
 h3 {
-  color: #ffffff;
+  color: rgb(158, 242, 205);
   font-family: 'Architects Daughter', cursive;
 }
 #sign-login{
