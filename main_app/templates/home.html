@@ -9,17 +9,18 @@
 </div>
 
 {% if user.is_authenticated %}
-<h2 class="most-recent title">Most Recently Added...</h2>
-    <div class="splide splide1" data-splide='{"type":"loop","perPage":5}'>
-        <div class="splide__track">
-            <ul class="splide__list">
-                {% for sneaker in sneakers %}
-                <li class="splide__slide"><img class="show-img-home" src="{{sneaker.image}}" alt="{{sneaker.name}}"></li>
-                {% endfor %}
-            </ul>
+<div class="home-carousel">
+    <h2 id="home-recent" class="most-recent title">Most Recently Added...</h2>
+        <div class="splide splide1" data-splide='{"type":"loop","perPage":5}'>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for sneaker in sneakers %}
+                    <li class="splide__slide"><img class="show-img-home" src="{{sneaker.image}}" alt="{{sneaker.name}}"></li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
-
+</div>
 <div class="video1">
     <div class="container">
     <img class="home-img" src="https://cms-cdn.goat.com/750/d3d6e7bef1b5-9ada-be11-aa5c-0a023e44.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
@@ -31,7 +32,7 @@
 </div>
 
 
-<h2 class="most-recent title">Dropping this week...</h2> 
+<h2 id="inv-title2" class="most-recent">Dropping Soon...</h2> 
 <div class="container home-box">
     <article class="media">
         <div class="media-left">
@@ -41,7 +42,7 @@
         </div>
         <div class="media-content">
             <div class="content">
-                <h3 class="just-in">Jordan 1 'Tie Dye'</h3>
+                <h2 class="just-in">Jordan 1 'Tie Dye'</h2>
                 <h5><small>06/012/2021</small></h5>
                     <p>
                     This pack includes a total of four color options dressed in Mono Ice, Mono Clay, Mono Mist, and Mono Light. Each adidas
@@ -60,7 +61,7 @@
         </div>
         <div class="media-content">
             <div class="content">
-                <h3 class="just-in">Air Force 1</h3>
+                <h2 class="just-in">Air Force 1</h2>
                 <h5><small>06/12/2021</small></h5>
                     <p>
                         For the first time ever, the silhouette boasts hippie-esque tie dye patterns coating its overlays, and fall against a neutral-style backdrop executed with white leather base layers paired with black toe boxes, laces, Swooshes, and ankle collars
@@ -77,10 +78,10 @@
         </div>
         <div class="media-content">
             <div class="content">
-                <h3 class="just-in">Yeezy 350</h3>
+                <h2 class="just-in">Sacai Blazer Low</h2>
                 <h5><small>06/12/2021</small></h5>
                     <p>
-                        For the first time ever, the silhouette boasts hippie-esque tie dye pattern coating its overlays, and fall against a neutral-style backdrop executed with white leather base layers paired with black toe boxes, laces, Swooshes, and ankle collars
+                        The sacai x Nike Blazer Low and both Classic Green and Magma Orange have been given an official release date. Done in similar fashion, both offerings are defined by double laces, tongues, Swooshes, and foxing. The sneakers also come with a mixed material construction consisting of smooth leathers, suede and canvas throughout the upper.
                     </p>
             </div>
         </div>

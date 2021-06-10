@@ -2,14 +2,14 @@
 
 
 <div class="new-div-login1 container box1">
-    <h3 class="title inv-title">Log In</h3>
+    <h2 class="inv-title">Log In</h2>
         <form class="login-p" method="post" action="{% url 'login' %}">
             {% csrf_token %} {{form.errors}}
             
             <h3 id="sign-login">User Name:<input class="new-input1" type="username" name="username" placeholder="User Name" required></h3>
 
             <h3 id="sign-login">Password:<input class="new-input1" type="password" name="password" placeholder="Password" required minlength="8"></h3>
-                        <input type="submit" class="new-btn btn button is-info is-medium" value="Login" />
+                        <input type="submit" class="new-btn btn button is-black is-medium" value="Login" />
                         <input type="hidden" name="next" value="{{ next }}" />
         </form>
 </div>

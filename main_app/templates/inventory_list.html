@@ -23,15 +23,15 @@
 </div>
 
 
-<div id="darkmode" class="container gallery inventory-form">
+<div class="container gallery inventory-form">
     {% for Sneaker in sneakers %}
     <a href="{% url "inventory_detail" Sneaker.pk %}">
         <div class="card">
-            <div id="darkmode" class="sneaker">
+            <div class="sneaker">
                 <img class="inventory-img" src="{{Sneaker.image}}" alt="{{Sneaker.name}}"/>
             </div>
              <div class="info">
-                <h4 class="card-header-title title-inventory">{{Sneaker.name}}</h4>
+                <h4 class="title-inventory">{{Sneaker.name}}</h4>
             </div> 
         </div>
     </a>

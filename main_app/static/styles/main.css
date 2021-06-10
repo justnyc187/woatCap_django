@@ -1,5 +1,5 @@
 body {
-  color: #ffffff;
+  background: linear-gradient(to right top, #eff2f4, rgb(189, 244, 220));
   min-height: 100vh;
 }
 .centered {
@@ -24,17 +24,38 @@ body {
   font-size: 30px;
   text-align: center;
 }
+#inv-title2{
+  font-size: 80px;
+}
+#home-recent{
+  font-size: 50px;
+}
+.inv-title{
+  text-align: center;
+  font-weight: bold;
+}
 h2,
 h3 {
   color: #ffffff;
   font-family: 'Architects Daughter', cursive;
 }
+#sign-login{
+  color: rgb(158, 242, 205);
+  font-size: 55px;
+  text-align: center;
+}
+#sign-login1{
+  color: rgb(158, 242, 205);
+  font-size: 45px;
+  text-align: center;
+}
 h2{
   color: black;
-  font-size: 50px;
+  font-size: 60px;
 }
 h3{
   font-family: 'Architects Daughter', cursive;
+  color: rgb(158, 242, blue);
 }
 h1{
   color: black;
@@ -72,11 +93,6 @@ inventory
 p {
   font-size: 15px;
   color: black;
-}
-#sign-login{
-  color: whitesmoke;
-  font-size: 45px;
-  text-align: center;
 }
 .new-div-login1{
   padding-top: 300px;
@@ -131,9 +147,6 @@ p {
   padding-bottom: 10px;
   align-items: center;
 }
-.inv-title{
-  text-align: center;
-}
 .new-btn{
   margin-top: 10px;
 }
@@ -170,11 +183,18 @@ p {
   /* padding: 2rem 0rem; */
   font-weight: lighter;
   transition: all 0.75s ease-out;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .video1{
   text-align: center;
   width: 100%;
   background-color: black;
+}
+.title-inventory{
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 30px;
 }
 /* .splide1{
   margin-bottom: 40px;
@@ -227,6 +247,10 @@ p {
   border-color: whitesmoke;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
+.home-carousel{
+  background-color: white;
+  padding-bottom: 30px;
+}
 .box1{
   text-align: center;
   border-radius: 5px;
@@ -235,6 +259,7 @@ p {
   padding: 20px;
   font-size: 2opx;
   border-radius: 10px;
+  background-color: white;
   border-color: whitesmoke;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
@@ -245,6 +270,7 @@ p {
   padding: 40px;
   font-size: 15px;
   border-radius: 10px;
+  background-color: white;
   border-color: whitesmoke;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
