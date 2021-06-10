@@ -53,7 +53,7 @@
         <div class="modal-content modal-div2 box1">
             <form action="{% url "inventory_update" sneaker.pk %}" method="post">
                 {% csrf_token %} {{forms.errors}}
-        
+                    <h2 class="inv-title">Update</h2>
                 <h3 id="modal">Name: <input class="new-input" value="{{ sneaker.name }}" type="text" name="name" placeholder="Name"></h3>
                 <h3 id="modal">Size: <input class="new-input" value="{{ sneaker.size }}" type="text" name="size" placeholder="Size"></h3>
                 <h3 id="modal">Value on Goat: <input class="new-input" value="{{ sneaker.value }}" type="text" name="value" placeholder="Value"></h3>
